@@ -18,16 +18,15 @@ This generator uses Go's `crypto/rand` which implements a cryptographically secu
 # Installation
 
 ```
-cd ~
-GO111MODULE=on go get -u github.com/iwittkau/minio-keygen
+go install github.com/iwittkau/minio-keygen@latest
 ```
 
 # Usage
 
 ```
 $ minio-keygen
-MINIO_ACCESS_KEY=N0SDCYA4JFCBOI9BDAI4APXB
-MINIO_SECRET_KEY=MU3QVVSuHHU2fRHaltxZwH2PQwi4TID38br0vVDY1GaqcJQs
+MINIO_ROOT_USER=PLEASE-DONT-USE-THIS
+MINIO_ROOT_PASSWORD=thisIsOnlyAnExampleYouShouldUseTheActualOutput
 ```
 
 You can also create an `.env` file from the output with:
